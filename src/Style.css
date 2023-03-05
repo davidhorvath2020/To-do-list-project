@@ -10,7 +10,8 @@ body {
   height: 40px;
 }
 
-.AddItemsButton, .DeleteAllButton{
+.AddItemsButton,
+.DeleteAllButton {
   cursor: pointer;
   background-color: #565555;
   border: none;
@@ -19,8 +20,7 @@ body {
 }
 
 .AddItemsButton:hover,
-.DeleteAllButton:hover
-{
+.DeleteAllButton:hover {
   animation-name: Shining;
   animation-duration: 0.5s;
 }
@@ -30,24 +30,28 @@ body {
     background-color: #565555;
   }
 
-  50% {background-color: rgb(54, 255, 47)}
+  50% {
+    background-color: rgb(54, 255, 47)
+  }
 
   100% {
-    background-color:  #565555;
+    background-color: #565555;
   }
 }
 
-.DarkModeButton{
+.DarkModeButton {
   cursor: pointer;
 }
 
 .App {
-  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(140, 139, 139, 1) 50%, rgba(255, 255, 255, 1) 100%);
   min-height: fit-content;
 }
 
 .Dark {
-  background-color: rgb(39, 38, 38);
+  background: rgb(103, 103, 103);
+  background: linear-gradient(90deg, rgba(103, 103, 103, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(103, 103, 103, 1) 100%);
   color: white;
   min-height: 100vh;
 }
@@ -58,7 +62,7 @@ body {
   align-items: center;
 }
 
-.AddItems--Button-Counter{
+.AddItems--Button-Counter {
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -67,30 +71,35 @@ body {
 .AddedTodo--Container {
   max-height: min-content;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  margin: 20px 50px 0px 50px;
+  flex-wrap: wrap;
 }
 
-ul {
-  margin: 0;
-  list-style-type: none;
-  max-height: 100%;
-}
 
-li{
+
+.TaskDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 5px;
   border: 3px transparent solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(121, 197, 71);
 }
 
-li:hover{
+.TaskDiv:hover {
   border: 3px blue solid;
 }
 
-.delete-button{
+.delete-button {
   background-color: transparent;
   border: none;
 }
 
-.delete-button:hover{
+.delete-button:hover {
   cursor: pointer;
 }
 
@@ -137,4 +146,13 @@ li:hover{
   border: 5px solid transparent;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.Title--Container{
+  display: flex;
+  flex-direction: row;
+}
+
+h2{
+  padding: 0px 10px 0px 10px;
 }
